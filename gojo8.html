@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Gojo 8 - Sealed</title>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 40px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            text-align: center;
+            color: #ffffff;
+
+            /* Dark cloudy sky */
+            background: linear-gradient(to bottom, #0b0f1a, #1a1f2b, #000000);
+            overflow: hidden;
+        }
+
+        h1 {
+            color: #b3c7ff;
+            text-shadow: 0 0 15px #000;
+            margin-bottom: 20px;
+        }
+
+        img {
+            max-width: 40%;
+            max-height: 40vh;
+            width: auto;
+            height: auto;
+            border-radius: 15px;
+            box-shadow: 0 15px 40px rgba(0,0,0,0.95);
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 20px;
+            color: #d6dcff;
+            font-style: italic;
+            margin-bottom: 30px;
+        }
+
+        a {
+            display: inline-block;
+            margin: 10px;
+            padding: 12px 25px;
+            background-color: rgba(0,0,0,0.6);
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 8px;
+            border: 1px solid #444;
+            transition: 0.3s;
+        }
+
+        a:hover {
+            background-color: rgba(255,255,255,0.1);
+        }
+
+        /* 3D Rain Effect */
+        .rain,
+        .rain::before,
+        .rain::after {
+            content: "";
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            background-repeat: repeat;
+        }
+
+        .rain {
+            background-image: linear-gradient(
+                rgba(255,255,255,0.3) 2%,
+                transparent 2%
+            );
+            background-size: 2px 15px;
+            animation: rain-fast 0.3s linear infinite;
+        }
+
+        .rain::before {
+            background-image: linear-gradient(
+                rgba(255,255,255,0.15) 2%,
+                transparent 2%
+            );
+            background-size: 2px 25px;
+            animation: rain-mid 0.6s linear infinite;
+        }
+
+        .rain::after {
+            background-image: linear-gradient(
+                rgba(255,255,255,0.08) 2%,
+                transparent 2%
+            );
+            background-size: 1px 40px;
+            animation: rain-slow 1s linear infinite;
+        }
+
+        @keyframes rain-fast {
+            from { background-position: 0 0; }
+            to { background-position: 0 200px; }
+        }
+
+        @keyframes rain-mid {
+            from { background-position: 0 0; }
+            to { background-position: 0 150px; }
+        }
+
+        @keyframes rain-slow {
+            from { background-position: 0 0; }
+            to { background-position: 0 100px; }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="rain"></div>
+
+    <h1>Gojo 8 🌧️</h1>
+
+    <!-- Sealing photo -->
+    <img src="gojo5.jpg" alt="Gojo getting sealed">
+
+    <!-- Caption -->
+    <p>The jujutsu world stopped when the honoured one got sealed,it was the sorcerers biggest nightmare…</p>
+
+    <!-- Navigation -->
+    <a href="gojo7.html">← Previous</a>
+    <a href="gojo9.html">Next →</a>
+    
+
+</body>
+</html>
